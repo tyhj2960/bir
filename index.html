@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes">
+<title>비룡소</title>
+<meta name="description" content="비룡소">
+<meta property="og:type" content="website">
+<meta property="og:title" content="bir">
+<meta property="og:url" content="http://tyhj2960.dothome.co.kr/bir/">
+<meta property="og:image" content="http://tyhj2960.dothome.co.kr/bir/bir_og.png">
+<meta property="og:description" content="비룡소">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="mobile_android_7272.png">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean" rel="stylesheet">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/common.css?v=<?php echo time() ?>">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js?v=<?php echo time() ?>"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+       <div class="background_header"></div>
+        <h1 class="logo"><a href="index.html"><img src="images/bir.png" alt="비룡소"></a></h1>
+        <button class="btn_global_search" type="button">search</button>
+        <div class="global_search_wrap">
+            <h2>Search</h2>
+            <button class="btn_close" type="button">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="global_search">
+                <div class="search_bar">
+                    <input type="text" class="search input_global_search">
+                    <button class="btn_search"></button>
+                </div>
+                <div class="keywords">
+                    <h4>인기검색어</h4>
+                    <ul>
+                    <li><a href="#">#비버몰</a></li>
+                    <li><a href="#">#세상에서 가장 용감한 소녀</a></li>
+                    <li><a href="#">#미카엘라</a></li>
+                    <li><a href="#">#핑스</a></li>
+                    <li><a href="#">#블루픽션상</a></li>
+                    </ul>
+                </div>
+                <a class="detailed_search" href="#"> 도서 상세 검색</a>
+            </div>
+        </div>
+        <button class="btn_allMenu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <div class="dimm"></div>
+        <div class="pc_gnb">
+        <div class="top_header">
+            <ul class="util">
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">회원가입</a>
+                </li>
+            </ul>
+            <ul class="family_site">
+                <li>
+                    <a href="#">고릴라박스</a>
+                </li>
+                <li>
+                    <a href="#">어스본 코리아</a>
+                </li>
+            </ul>
+            <div class="search_bar">
+                    <input type="text" class="search input_global_search">
+                    <button class="btn_search"></button>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <ul class="gnb">
+                <li>
+                    <a href="#">소개</a>
+                        <div class="depth2">
+                        <h2 class="depth2_tit">소개</h2>
+                        <ul>
+                        <li>
+                        <a href="#">1. 비룡소 소개</a>
+                            <ul class="depth3">
+                                <li>
+                                    <a href="#">- 비룡소 소개 &amp; 연혁</a></li>
+                                <li>
+                                    <a href="#">- 비룡소의 브랜드</a></li>
+                                <li>
+                                    <a href="#">- 민음사 출판그룹</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">2. 사회환원 캠페인</a>
+                        </li>
+                        <li>
+                            <a href="#">3. 원고 투고</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">도서</a>
+                        <div class="depth2">
+                       <h2 class="depth2_tit">도서</h2>
+                       <ul>
+                        <li>
+                        <a href="#">1. 전체도서</a>
+                            <ul class="depth3">
+                                <li>
+                                    <a href="#">- 분류</a></li>
+                                <li>
+                                    <a href="#">- 상세 검색</a></li>
+                                <li>
+                                    <a href="#">- 도서목록 다운로드</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">2. 시리즈</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 그림책</a></li>
+                                <li><a href="#">- 읽기책</a></li>
+                                <li><a href="#">- 과학/환경/수학</a></li>
+                                <li><a href="#">- 논픽션</a></li>
+                                <li><a href="#">- 청소년</a></li>
+                                <li><a href="#">- 만화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">3. 추천도서</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 베스트셀러</a></li>
+                                <li><a href="#">- 대표도서</a></li>
+                                <li><a href="#">- 추천/상받은 도서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">4. 교과서 연계도서</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 다운로드</a></li>
+                                <li><a href="#">- 도서소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">5. 전자책</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">북클럽비버</a>
+                        <div class="depth2">
+                        <h2 class="depth2_tit">북클럽 비버</h2>
+                        <ul>
+                        <li>
+                        <a href="#">1. 북클럽 비버 소개</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 단계와 구성</a></li>
+                                <li><a href="#">- 연령별 소개</a></li>
+                                <li><a href="#">- 연령별 추천 도서</a></li>
+                                <li><a href="#">- 북클럽 비버 활용법</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">2. 북클럽 비버 가입하기</a>
+                        </li>
+                        <li>
+                            <a href="#">3. 우리 아이 독서 컨설팅</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 컨설팅 요청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">4. 비버 회원 광장</a>
+                        </li>
+                        <li><a href="#">5. 북클럽 소식 &amp; 공지</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">공지사항</a>
+                    <div class="depth2">
+                       <h2 class="depth2_tit">공지사항</h2>
+                       <ul>
+                        <li>
+                        <a href="#">1. 소식 &amp; 공지</a>
+                        </li>
+                        <li>
+                            <a href="#">2. 이벤트/ 행사</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 진행중</a></li>
+                                <li><a href="#">- 종료/당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <div class="depth2">
+                       <h2 class="depth2_tit">커뮤니티</h2>
+                       <ul>
+                        <li>
+                        <a href="#">1. 비룡소 뉴스레터</a>
+                        </li>
+                        <li>
+                            <a href="#">2. 행사 스케치</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 진행중</a></li>
+                                <li><a href="#">- 종료/당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">3. 모니터링 클럽</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 연못지기</a></li>
+                                <li><a href="#">- 반디클럽</a></li>
+                                <li><a href="#">- 레몬기사단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">4. 체험단</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 비버프렌즈</a></li>
+                                <li><a href="#">- 해피어스본</a></li>
+                                <li><a href="#">- 해피어스본 baby</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">5. 다운로드</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 비버프렌즈</a></li>
+                                <li><a href="#">- 해피어스본</a></li>
+                                <li><a href="#">- 해피어스본 baby</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <div class="depth2">
+                       <h2 class="depth2_tit">고객센터</h2>
+                       <ul>
+                        <li>
+                        <a href="#">1. 자주묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">2. 1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">3. 원화 전시 신청</a>
+                        </li>
+                        <li>
+                            <a href="#">4. 무료자료 신청</a>
+                        </li>
+                        <li>
+                            <a href="#">5. 채용</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">쇼핑</a>
+                    <div class="depth2">
+                       <h2 class="depth2_tit">쇼핑</h2>
+                       <ul>
+                        <li>
+                        <a href="#">1. 전체도서</a>
+                        </li>
+                        <li>
+                            <a href="#">2. 북클럽 비버몰</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 진행중</a></li>
+                                <li><a href="#">- 종료/당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">3. 장바구니</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 연못지기</a></li>
+                                <li><a href="#">- 반디클럽</a></li>
+                                <li><a href="#">- 레몬기사단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">4. 마이페이지</a>
+                            <ul class="depth3">
+                                <li><a href="#">- 결제내역</a></li>
+                                <li><a href="#">- 마일리지</a></li>
+                                <li><a href="#">- 관심상품</a></li>
+                                <li><a href="#">- 나의 후기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        
+        <div class="m_gnb">
+            <div class="top_m_gnb">
+               <button class="btn_close" type="button">
+                   <span></span>
+                   <span></span>
+               </button>
+                <ul class="util">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_m_gnb">
+               <ul class="bottom_m_gnb_inner">
+                <li>
+                    <a href="#">소개</a>
+                    <div class="depth2">
+                    <ul class="depth2_inner">
+                        <li>
+                        <a href="#">비룡소 소개</a>
+                            <ul class="depth3">
+                                <li>
+                                    <a href="#">비룡소 소개 &amp; 연혁 -</a></li>
+                                <li>
+                                    <a href="#">비룡소의 브랜드 -</a></li>
+                                <li>
+                                    <a href="#">민음사 출판그룹 -</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사회환원 캠페인</a>
+                        </li>
+                        <li>
+                            <a href="#">원고 투고</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">도서</a>
+                       <div class="depth2">
+                        <ul class="depth2_inner">
+                        <li>
+                        <a href="#">전체도서</a>
+                            <ul class="depth3">
+                                <li>
+                                    <a href="#">분류 -</a></li>
+                                <li>
+                                    <a href="#">상세 검색 -</a></li>
+                                <li>
+                                    <a href="#">도서목록 다운로드 -</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">시리즈</a>
+                            <ul class="depth3">
+                                <li><a href="#">그림책 -</a></li>
+                                <li><a href="#">읽기책 -</a></li>
+                                <li><a href="#">과학/환경/수학 -</a></li>
+                                <li><a href="#">논픽션 -</a></li>
+                                <li><a href="#">청소년 -</a></li>
+                                <li><a href="#">만화 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">추천도서</a>
+                            <ul class="depth3">
+                                <li><a href="#">베스트셀러 -</a></li>
+                                <li><a href="#">대표도서 -</a></li>
+                                <li><a href="#">추천/상받은 도서 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">교과서 연계도서</a>
+                            <ul class="depth3">
+                                <li><a href="#">다운로드 -</a></li>
+                                <li><a href="#">도서소개 -</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">전자책</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">북클럽비버</a>
+                        <div class="depth2">
+                        <ul class="depth2_inner">
+                        <li>
+                        <a href="#">북클럽 비버 소개</a>
+                            <ul class="depth3">
+                                <li><a href="#">단계와 구성 -</a></li>
+                                <li><a href="#">연령별 소개 -</a></li>
+                                <li><a href="#">연령별 추천 도서 -</a></li>
+                                <li><a href="#">북클럽 비버 활용법 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">북클럽 비버 가입하기</a>
+                        </li>
+                        <li>
+                            <a href="#">우리 아이 독서 컨설팅</a>
+                            <ul class="depth3">
+                                <li><a href="#">컨설팅 요청 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">비버 회원 광장</a>
+                        </li>
+                        <li><a href="#">5. 북클럽 소식 &amp; 공지</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">공지사항</a>
+                    <div class="depth2">
+                    <ul class="depth2_inner">
+                        <li>
+                        <a href="#">소식 &amp; 공지</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트/ 행사</a>
+                            <ul class="depth3">
+                                <li><a href="#">진행중 -</a></li>
+                                <li><a href="#">종료/당첨자 발표 -</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <div class="depth2">
+                        <ul class="depth2_inner">
+                        <li>
+                        <a href="#">비룡소 뉴스레터</a>
+                        </li>
+                        <li>
+                            <a href="#">행사 스케치</a>
+                            <ul class="depth3">
+                                <li><a href="#">진행중 -</a></li>
+                                <li><a href="#">종료/당첨자 발표 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">모니터링 클럽</a>
+                            <ul class="depth3">
+                                <li><a href="#">연못지기 -</a></li>
+                                <li><a href="#">반디클럽 -</a></li>
+                                <li><a href="#">레몬기사단 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">체험단</a>
+                            <ul class="depth3">
+                                <li><a href="#">비버프렌즈 -</a></li>
+                                <li><a href="#">해피어스본 -</a></li>
+                                <li><a href="#">해피어스본 baby -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">다운로드</a>
+                            <ul class="depth3">
+                                <li><a href="#">비버프렌즈 -</a></li>
+                                <li><a href="#">해피어스본 -</a></li>
+                                <li><a href="#">해피어스본 baby -</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <div class="depth2">
+                        <ul class="depth2_inner">
+                        <li>
+                        <a href="#">자주묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">원화 전시 신청</a>
+                        </li>
+                        <li>
+                            <a href="#">무료자료 신청</a>
+                        </li>
+                        <li>
+                            <a href="#">채용</a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">쇼핑</a>
+                    <div class="depth2">
+                        <ul class="depth2_inner">
+                        <li>
+                        <a href="#">전체도서</a>
+                        </li>
+                        <li>
+                            <a href="#">북클럽 비버몰</a>
+                            <ul class="depth3">
+                                <li><a href="#">진행중 -</a></li>
+                                <li><a href="#">종료/당첨자 발표 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">장바구니</a>
+                            <ul class="depth3">
+                                <li><a href="#">연못지기 -</a></li>
+                                <li><a href="#">반디클럽 -</a></li>
+                                <li><a href="#">레몬기사단 -</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                            <ul class="depth3">
+                                <li><a href="#">결제내역 -</a></li>
+                                <li><a href="#">마일리지 -</a></li>
+                                <li><a href="#">관심상품 -</a></li>
+                                <li><a href="#">나의 후기 -</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <main id="main">
+       <div class="main_wrap">
+           <div class="main_visual">
+                <ul class="btn_tab">
+                    <li class="active"><a href="#">신<br>간</a></li>
+                    <li><a href="#">베<br>스<br>트</a></li>
+                    <li><a href="#">이<br>벤<br>트</a></li>
+                </ul>
+                <div class="slider_wrap">
+                <div class="swiper-container main_slider active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="images/main_visual1_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>신비수풀라 숲에서 만난 스뾰강과 스퓨랑</h2>
+                                    <div class="thin">
+                                       <strong>글</strong> 줄리아 도널드슨<strong>그림</strong> 악셀 셰플러<strong>옮김</strong>노은정
+                                        </div>
+                                        <div class="book_tit">
+                                            서로 너무 다른 빨강 종족 스뾰강과 파랑 종족 스퓨랑이 만나 전하는 협동, 화합, 그리고 화해의 이야기!
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="images/main_visual2_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>친절 세상을 바꾸는 힘</h2>
+                                    <div class="thin">
+                                       <strong>글</strong> 앨리슨 그린<strong>그림</strong> 악셀 셰플러 외 37명<strong>옮김</strong> 정회성
+                                        </div>
+                                        <div class="book_tit">
+                                           <div class="strong">우리 아이를 행복하게 만드는 친절과 배려의 모든 것!</div><p></p>
+                                            <br>안데르센 상, 라가치 상, 케이트 그리너웨이 상 등을 수상한 세계적인 그림책 거장 38명의 공동 참여작! 우리 안의 다정한 힘을 일깨우는 따뜻한 그림책
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="images/main_visual3_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>수학 귀신</h2>
+                                    <div class="thin">
+                                       <strong>글</strong> 한스 엔첸스베르거<strong>그림</strong> 로트라우트 수잔네 베르너<strong>옮김</strong> 고영아
+                                       <br>독일 서적예술재단 상 , 어린이도서연구회 추천 도서,  열린어린이 선정 좋은 어린이책, 전교조 권장 도서
+                                        </div>
+                                        <div class="book_tit">
+                                            <div class="strong">"이 세상에 숫자만큼 마음을 설레게 하는 건 <p>아무것도 없으니까!"</p></div>
+                                            <br>꿈에 나타난 수학 귀신과 함께하는 열두 밤의 환상적인 여행
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="images/main_visual4_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>안녕, 나의 등대</h2>
+                                    <div class="thin">
+                                       <strong>글/그림</strong> 소피 블랙올<strong>옮김</strong> 정회성<br>뉴욕 타임스 선정, 칼데콧 상, 커커스 리뷰 최고의 어린이 책
+                                        </div>
+                                        <div class="book_tit">
+                                           <div class="strong">등대는 해 질녁부터 새벽녁까지 불을 밝혀요.<br>&emsp;&emsp;여기예요!<br>&emsp;&emsp;&emsp;...여기예요!<br>&emsp;&emsp;&emsp;&emsp;...여기예요!<br>&emsp;&emsp;&emsp;&emsp;&emsp;...여기 등대가 있어요!<p></p></div><br>
+                                            고되지만 세상을 밝힌 등대지기에게 바치는 아름다운 헌사와 사라져 가는 것들에 대한 따듯한 안부
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>   
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="images/main_visual5_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>한밤중 달빛 식당</h2>
+                                    <div class="thin">
+                                       <strong>글</strong> 이분희<strong>그림</strong> 윤태규<br>제7회 비룡소 문학상 대상 수상작
+                                        </div>
+                                        <div class="book_tit">
+                                            <div class="strong">“지우고 싶은 나쁜 기억이 있으면,<br><p>‘한밤중 달빛 식당’으로 오세요!”</p></div>
+                                            <br>기억과 선택에 대한 아름답고 환상적인 이야기
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="images/main_visual6_pc.jpg" alt="vir">
+                                <div class="main_txt">
+                                    <h2>어느 날 구두에게 생긴 일</h2>
+                                    <div class="thin">
+                                       <strong>글</strong> 황선미<strong>그림</strong> 신지수
+                                       <br>소천아동문학상 , 2015 김해의 책, 교보문고 추천 도서, 국립어린이청소년도서관 추천 도서
+                                        </div>
+                                        <div class="book_tit">
+                                           <strong>“그때 너희들도 나처럼 가슴이 아팠니?”</strong>
+                                            <br>『마당을 나온 암탉』 황선미 작가의 신작 동화 ‘구두 한 짝’에 담긴 아릿한 비밀 이야기
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+                </div>
+           </div>
+        <section class="section1">
+            <a href="#"><div class="sec1_common section1_left">
+               <div class="tit">
+                    <span class="category">출간 이벤트</span>
+                    <h3>귀신감독 <br>탁풍운</h3>
+                    <p>2019.09.11 ~ 2019.10.10</p>
+                    <img class="img_opacity" src="images/pung.png" alt="">
+                </div>
+            </div></a>
+            <a href=""><div class="sec1_common section1_right">
+                <div class="tit">
+                <span class="category">서포터즈 모집</span>
+                    <h3><img src="images/bir_text.png" alt="">제목</h3>
+                    <p>2019.09.19 ~ 2019.09.24</p>
+                    <img class="img_opacity" src="images/bir_ca.png" alt="">
+                </div>
+            </div></a>
+        </section>
+        <div class="main_banner">
+            <a href="#">
+                <h3>한 학기 한 권 읽기</h3>
+                <p>온 작품 무료 다운로드</p>
+            </a>
+        </div>
+        <section class="section2">
+           <h2>heading</h2>
+            <div class="top_section2">
+                <div class="section2_tit">
+                    <img src="images/beaver_tit.png" alt="#">
+                    <p>우리 아이에게 즐거운 책읽기 습관을 길러 주는 비룡소의 책읽기 프로그램입니다.<br>아이 눈높이에 꼭 맞는 좋은 책과 독후 활동을 매달 집에서 편하게 받아 볼 수 있습니다.</p>
+                </div>
+            </div>
+            <ul class="bottom_section2">
+                <li><a href="#">북클럽 비버 <span class="highlight">유아</span></a></li>
+                <li><a href="#">북클럽 비버 <span class="highlight">초등</span></a></li>
+                <li><a href="#">독서<br> <span class="highlight">컨설팅</span></a></li>
+            </ul>
+        </section>
+        <section class="section3">
+            <ul class="section3_inner">
+                <li class="sec3_news">
+                    <h3><a href="#">비룡소 소식</a></h3>
+                    <div class="news_wrap scroll_style">
+                        <ul>
+                            <li>
+                                <a href="#"><span class="highlight">[소식]</span>고전을 더 깊이 읽자! ‘비룡소 클래식 리딩 가이드’ 다운 받기!</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[공지]</span>제4회 마시멜로 픽션 걸스 심사위원단 모집!</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[공지]</span>제13회 블루픽션상 심사 결과 발표</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[공지]</span>제9회 비룡소 문학상 심사 결과 발표</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[소식]</span>2019년 1분기 문학나눔 도서보급사업 선정 도서 공개!</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[이벤트]</span> 1학기 수업 공유 이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[소식]</span>[소식]  &#60;환상 해결사&#62;, &#60;바꿔!&#62;, &#60;한밤중 달빛 식당&#62; 용인시 올해의 책 선정</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[소식]</span>「바꿔」, 「신통방통 홈쇼핑」, 「세상에서 가장 용감한 소녀」 국립 어린이 도서관, 서울교육청 어린이 도서관 여름 사서추천 도서 선정</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="highlight">[소식]</span>2019년 1분기 문학나눔 도서보급사업 선정 도서 공개!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sec3_alarm">
+                    <h3><a href="#">휴대폰 알람 서비스</a></h3>
+                    <p>비룡소의 신간, 도서할인, 이벤트 소식을 휴대폰 문자메시지로 받아 보세요!</p>
+                    <button class="btn_sns" type="button">휴대폰 알람 신청하기</button>
+                    <span>홈쇼핑 발송 일정은 방송 1일 전과 당일 1시간전에 휴대폰 문자 메시지로 보내 드립니다.</span>
+                    <ul>
+                        <li><a href="#">· 공동구매·홈쇼핑 소식 바로 가기</a></li>
+                        <li><a href="#">· 서점별 할인 이벤트 소식 바로 가기</a></li>
+                        <li><a href="#">· 비룡소 SHOP 특가 행사 바로 가기</a></li>
+                    </ul>
+                </li>
+                <li class="sec3_sns">
+                    <ul>
+                        <li>
+                            <h3>비룡소&amp;고릴라박스 공식 SNS</h3>
+                            <ul class="sns_wrap">
+                                <li><a href="#" class="face"></a></li>
+                                <li><a href="#" class="naver"></a></li>
+                                <li><a href="#" class="post"></a></li>
+                                <li><a href="#" class="insta"></a></li>
+                                <li><a href="#" class="twitter"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>어스본코리아 <br>공식 SNS</h3>
+                            <ul class="sns_wrap">
+                                <li><a href="#" class="kakao"></a></li>
+                                <li><a href="#" class="post"></a></li>
+                                <li><a href="#" class="insta"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>북클럽비버 <br>공식 SNS</h3>
+                            <ul class="sns_wrap">
+                                <li><a href="" class="post"></a></li>
+                                <li><a href="" class="insta"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer_wrap">
+            <ul class="top_footer">
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">위치 및 연락처</a>
+                </li>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">소식 RSS</a>
+                </li>
+                <li>
+                    <a href="#">도서 RSS</a>
+                </li>
+            </ul>
+            <p>
+                주소: 서울시 강남구 신사동 506 강남출판문화센터 4층 <span>|</span><br> 새주소: 서울시 강남구 도산대로 1길 62 4층<br>
+전화: 02-515-2000 
+            </p>
+            <p>| 북클럽 고객센터: 1544-8220 | © BIR. All ights Reserved.</p>
+            <div class="family_wrap select_wrap">
+                <select name="">
+                   <option>- 민음사 출판그룹 -</option>
+                    <option>민음사</option>
+                    <option>황금가지</option>
+                    <option>사이언스북스</option>
+                    <option>세미콜론</option>
+                    <option>민음인</option>
+                    <option>판미동</option>
+                    <option>반비펄프</option>
+                    <option>비룡소</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
